@@ -21,23 +21,25 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // Function to open the modal
 const openModal = (imgSrc, imgAlt, title, text) => {
+  console.log('Opening modal with:', imgSrc, imgAlt, title, text); // Debugging line
   modalImg.src = imgSrc;
   modalImg.alt = imgAlt;
   modalTitle.innerHTML = title;
   modalText.innerHTML = text;
-  toggleClass(modalContainer, "active");
-  toggleClass(overlay, "active");
+  modalContainer.classList.add('active'); // Show modal
+  overlay.classList.add('active'); // Show overlay
 };
 
 // Function to close the modal
 const closeModal = () => {
-  toggleClass(modalContainer, "active");
-  toggleClass(overlay, "active");
+  modalContainer.classList.remove('active'); // Hide modal
+  overlay.classList.remove('active'); // Hide overlay
 };
 
 // Add click event to project items
 document.querySelectorAll("[data-modal-trigger]").forEach(item => {
   item.addEventListener("click", () => {
+    console.log('Clicked modal trigger'); // Debugging line
     const img = item.closest('figure').querySelector('img');
     openModal(
       img.src,
@@ -96,7 +98,6 @@ filterBtns.forEach(btn => {
 
 // Contact form variables
 const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // Enable button when form is valid
