@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.3/dist/ionicons.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
   <!--
     - google font link
   -->
@@ -49,7 +49,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/vidhyashanker.png" alt="Vidhya Shanker Goel" width="80">
+          <img src="./assets/images/vidhyashanker.png" alt="Vidhya Shanker Goel" width="50">
         </figure>
 
         <div class="info-content">
@@ -675,283 +675,234 @@
 
       
 
-
 <!-- Overlay -->
 <div class="overlay" data-overlay></div>
 
-      <article class="portfolio" data-page="portfolio">
+<article class="portfolio" data-page="portfolio">
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>DevOps</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Jenkins</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Cloud_Networking</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Power_BI</button>
+      </li>
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
+
+      <ul class="select-list">
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>DevOps</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Jenkins</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Cloud_Networking</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Power_BI</button>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="project-list">
+      <li class="project-item active" data-filter-item data-category="DevOps">
+        <a href="hhttps://github.com/vidhya101/Vprofile_Manual_Automated_VM_Setup.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Project1.png" alt="Vprofile" loading="lazy">
+          </figure>
+          <h3 class="project-title">Vprofile using VM</h3>
+          <p class="project-category">DevOps</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="DevOps">
+        <a href="https://github.com/vidhya101/AWS.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Project2.png" alt="orizon" loading="lazy">
+          </figure>
+          <h3 class="project-title">Vprofile using AWS</h3>
+          <p class="project-category">DevOps</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="DevOps">
+        <a href="https://github.com/vidhya101/vprofile-project-1.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Project3.png" alt="Vprofile" loading="lazy">
+          </figure>
+          <h3 class="project-title">Vprofile using AWS2</h3>
+          <p class="project-category">DevOps</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Jenkins">
+        <a href="https://github.com/vidhya101/Jenkins-pipeline-1.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Project4.png" alt="Jenkins" loading="lazy">
+          </figure>
+          <h3 class="project-title">Jenkins pipeline 1</h3>
+          <p class="project-category">Jenkins</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Jenkins">
+        <a href="https://github.com/vidhya101/Jenkins-project-2.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Project5.png" alt="Jenkins." loading="lazy">
+          </figure>
+          <h3 class="project-title">Jenkins using AWS</h3>
+          <p class="project-category">Jenkins</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Cloud_Networking">
+        <a href="https://github.com/your-repo/cloud-networking" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Networking_1.png" alt="Cloud_Networking" loading="lazy">
+          </figure>
+          <h3 class="project-title">Cloud_Networking</h3>
+          <p class="project-category">Cloud_Networking</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Cloud_Networking">
+        <a href="https://github.com/your-repo/cloud-networking2" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Networking_2.png" alt="Cloud_Networking" loading="lazy">
+          </figure>
+          <h3 class="project-title">Cloud_Networking</h3>
+          <p class="project-category">Cloud_Networking</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Jenkins">
+        <a href="https://github.com/your-repo/networking" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Networking_2.png" alt="Networking" loading="lazy">
+          </figure>
+          <h3 class="project-title">Networking</h3>
+          <p class="project-category">Jenkins</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Jenkins">
+        <a href="https://github.com/vidhya101/AWS-CICD.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/cicd_1.png" alt="Jenkins" loading="lazy">
+          </figure>
+          <h3 class="project-title">CICD_Pipeline_AWS</h3>
+          <p class="project-category">Jenkins</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Power_BI">
+        <a href="https://github.com/vidhya101/BITS_PROJECT.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/GlobalTrade1.png" alt="Power_BI" loading="lazy">
+          </figure>
+          <h3 class="project-title">Global_Trade_Analysis_1</h3>
+          <p class="project-category">Power_BI</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Power_BI">
+        <a href="https://github.com/vidhya101/BITS_PROJECT.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/GlobalTrade2.png" alt="Power_BI" loading="lazy">
+          </figure>
+          <h3 class="project-title">Global_Trade_Analysis_2</h3>
+          <p class="project-category">Power_BI</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="DevOps">
+        <a href="https://github.com/vidhya101/EMART_USING_Microservices.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/micro.png" alt="DevOps" loading="lazy">
+          </figure>
+          <h3 class="project-title">EMART APP USING EMART_USING_Microservices</h3>
+          <p class="project-category">Power_BI</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Power_BI">
+        <a href="https://github.com/vidhya101/Databricks_Humber_Project.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
+            </div>
+            <img src="./assets/images/Databricks.png" alt="Power_BI" loading="lazy">
+          </figure>
+          <h3 class="project-title">Databricks Dashboard</h3>
+          <p class="project-category">Power_BI</p>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+</article>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>DevOps</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Jenkins</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Cloud_Networking</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Power_BI</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>DevOps</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Jenkins</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Cloud_Networking</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Power_BI</button>
-              </li>
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="DevOps">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project1.png" alt="Vprofile" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Vprofile using VM</h3>
-
-                <p class="project-category">DevOps</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="DevOps">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Vprofile using AWS</h3>
-
-                <p class="project-category">DevOps</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="DevOps">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project3.png" alt="Vprofile" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Vprofile using AWS2</h3>
-
-                <p class="project-category">DevOps</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Jenkins">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project4.png" alt="Jenkins" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Jenkins</h3>
-
-                <p class="project-category">Jenkins</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Jenkins">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Project5.png" alt="Jenkins." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Jenkins using AWS</h3>
-
-                <p class="project-category">Jenkins</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Cloud_Networking">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Networking_1.png" alt="Cloud_Networking" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Cloud_Networking</h3>
-
-                <p class="project-category">Cloud_Networking</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Cloud_Networking">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Networking_2.png" alt="Cloud_Networking" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Cloud_Networking</h3>
-
-                <p class="project-category">Cloud_Networking</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Cloud_Networking">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Networking_2.png" alt="Cloud_Networking" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Networking</h3>
-
-                <p class="project-category">Jenkins</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Jenkins">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/cicd_1.png" alt="Jenkins" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">CICD_Pipeline_AWS</h3>
-
-                <p class="project-category">Jenkins</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Power_BI">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box" >
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/GlobalTrade1.png" alt="Power_BI" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Global_Trade_Analysis_1</h3>
-
-                <p class="project-category">Power_BI</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Power_BI">
-              <a href="#">
-
-                <figure class="project-img">
-                 <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline" data-modal-trigger></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/GlobalTrade2.png" alt="Power_BI" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Global_Trade_Analysis_2</h3>
-
-                <p class="project-category">Power_BI</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
 
 
 
@@ -1159,11 +1110,6 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5858732097577!2d-79.46870952415918!3d43.656783752199544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3428a1dcf1ab%3A0xca8cfbc4c4e689d4!2s95%20High%20Park%20Ave%2C%20Toronto%2C%20ON%20M6P%202R8!5e0!3m2!1sen!2sca!4v1722355533536!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
 
         <section class="contact-form">
 
